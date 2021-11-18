@@ -7,14 +7,14 @@ body {
     text-align: center;
 } */
 
-.topTeamLogo {
+.topTeamLogoBox {
    display: inline-block;
    width: 4.76%;
    height: 4.76%;
    padding: 2.38%;
 }
 
-.topTeamLogo p {
+.topTeamLogoBox p {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 10px;
