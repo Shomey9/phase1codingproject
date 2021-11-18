@@ -15,12 +15,11 @@ const makeMyApiEndpoint = (urlOfPage) => {
 
 
 //Make my TopPage
-const loadTopContent = () => {
-
-    
+const loadTopContent = () => {    
     fetch(makeMyApiEndpoint('https://liquipedia.net/counterstrike/HLTV/Team_Ranking'))
     .then(response => response.json())
     .then(pageContent => {
+       
         const svgFileOfPage = pageContent.parse.text['*']
 
         const convertSvgToHtml = (svgString) => {
@@ -28,6 +27,7 @@ const loadTopContent = () => {
         }
 
         const htmlFileOfPage = convertSvgToHtml(svgFileOfPage);
+        console.log(htmlFileOfPage);
 
         const whichTableDoIWant = () => {
             const previousMonth = () => {
@@ -190,6 +190,7 @@ rank1Image.addEventListener("mouseout", function(e) {
     e.target.style.display = "";
 })
 
+//Load Bottom Content
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('#player-input-form');
 
@@ -211,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+loadTopContent();
 // const testing = () => {
 // fetch(makeMyApiEndpoint('https://liquipedia.net/counterstrike/S1mple'))
 // .then(resp=>resp.json())
@@ -246,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //     .catch(error=>alert(error))
 
 
-loadTopContent();
+
 
 
 
