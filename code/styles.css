@@ -1,48 +1,74 @@
 body {
+    
     background: lightgray;
     text-align: center;
-}
-
-/* .topContent {
-    text-align: center;
-} */
-
-.topTeamLogoBox {
-   display: inline-block;
-   width: 4%;
-   height: 4%;
-   padding: 2.38%;
-   position: relative;
-   background: white;
-   margin-bottom: 10px;
-}
-
-.topTeamLogoimg {
-    position: absolute;
-    margin-bottom: 50%;
-    /* max-height: 100%;
-    max-width: 100%; */
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
     
+
 }
 
-.topTeamLogoBox p {
+#topOfWebPage, #middleOfWebPage #bottomOfWebPage{
+    display: flex;
+    flex-direction: column;
+}
+
+#topOfWebPage {
+    width: 100%;
+}
+
+#middOfWebPage {
+    width: 100%;
+}
+#top10Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom10Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer {
+    display: inline-block;
+    padding: 2.38%;
+    width: 100%;
+}
+.topTeamLogoImg {
     position: relative;
-    margin: 0;
-    margin-left: 0;
-    /* margin-bottom: 0; */
-    font-size: 10px;
-    text-align: left;
-    vertical-align: top;
+    top: 9px;
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    background: white;
 }
-
 .boxInnerContent {
     position: relative;
-    margin-top: -70px;
-    margin-left: -20px;
+    bottom: 100px;
+    display: "";
 }
+.boxInnerContent p {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+   
+}
+.teamMembers1 {
+    display: "";
+}
+.teamName {
+    white-space: nowrap;
+}
+
+
+#bottomOfWebPage {
+    width: 100%;
+    display: '';
+}
+
+
+
+
 
 
 
@@ -55,7 +81,6 @@ body {
 }
 
 .bottomContent {
-    
     display: inline-block;   
     margin: auto;    
 }
@@ -73,17 +98,12 @@ body {
 
 #middleContent {
     width: 50%;
-    /* position: absolute; */
     margin-top: 0px;
     align-items: middle;
     height: 100%;
     
 }
 
-/* #middleContent p {
-    position: absolute;
-    margin-top: 0px;
-} */
 
 #rightContent {
     width: 20%;
@@ -96,13 +116,3 @@ body {
 .rightContentItems {
     text-align: left;
 }
-/* 
-#scrollingNewsBox {
-    height:20px;
-    width:20px;
-    border:1px;
-    padding:5px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    text-align: center;
-}  */

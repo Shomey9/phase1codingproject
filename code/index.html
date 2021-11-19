@@ -12,247 +12,337 @@
 
     <body>
 
-        
-        <div id="topOfWebPage"> <!-- Top of WebApp Content -->
-            <!-- Text Input at the Top -->
+        <!-- Top of WebApp Content  -->
+        <div id="topOfWebPage"> 
             <div>
                 <h1 class="topContent" >Which CSGO Player Do You Want to Follow?</h1>
                 <div class="topContent">
+                     <!-- Text Input at the Top  -->
                     <form id="player-input-form">
-                        <input type="text" id="textInputIgn" class="userInput" placeholder="Type player name here."> 
+                        <input type="text" id="textInputIgn" class="userInput" autocomplete="off" placeholder="Type player name here."> 
                         <button type="submit" id="buttonIgn" class="userInput">Search</button>
                     </form>
                 </div>
             </div>
         
-        <!-- Top 20 Teams -->
-            <div class="topContent">
-                <p>Top 20 Ranked Teams in the World</p>
+            <!-- Top 20 Teams -->
+            <!-- <div> -->
+        <div id="middleOfWebPage">
+            <h2>Top 20 Ranked Teams in the World</h2> 
+                <div id="top20Container">
 
-                <div class="topTeamLogoBox">
-                    <img id="rank1" class="topTeamLogoImg" src="" alt="rank1">
-                    <div class = boxInnerContent>
-                    <p id="teamRank1"></p>
-                    <p class="teamMembers">p1</p>
-                    <p class="teamMembers">p2</p>
-                    <p class="teamMembers">p3</p>
-                    <p class="teamMembers">p4</p>
-                    <p class="teamMembers">p5</p>
-                    </div>
-                </div>
+                    <div id="top10Container">
 
-                <div class="topTeamLogoBox">
-                    <img id="rank2" class="topTeamLogoImg" src="" alt="rank2">
-                    <div class = boxInnerContent>
-                    <p id="teamRank2"></p>
-                    <p class="teamMembers1">p1</p>
-                    <p class="teamMembers1">p2</p>
-                    <p class="teamMembers1">p3</p>
-                    <p class="teamMembers1">p4</p>
-                    <p class="teamMembers1">p5</p>
-                    </div>
-                </div>
+                        <div class="imageContainer">
+                            <div>
+                                <p>1</p>
+                                <img id="rank1" href="" class="topTeamLogoImg" src="" alt="rank1"> 
+                                <p id="teamRank1" class="teamName"></p>  
+                            </div>
+                            <div id = "one" class = boxInnerContent>
+                                <p class="teamMembers1">p1</p>  
+                                <p class="teamMembers1">p2</p>  
+                                <p class="teamMembers1">p3</p>  
+                                <p class="teamMembers1">p4</p>  
+                                <p class="teamMembers1">p5</p>  
+                            </div>
+                        </div>
 
-                <div class="topTeamLogoBox">
-                    <img id="rank3" class="topTeamLogoImg" src="" alt="rank3">
-                    <div class = boxInnerContent>
-                    <p id="teamRank3"></p>
-                    <p class="teamMembers">p1</p>
-                    <p class="teamMembers">p2</p>
-                    <p class="teamMembers">p3</p>
-                    <p class="teamMembers">p4</p>
-                    <p class="teamMembers">p5</p>
-                    </div>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank4" class="topTeamLogoImg" src="" alt="rank4">
-                    <div class = boxInnerContent>
-                    <p id="teamRank4"></p>
-                    <p class="teamMembers">p1</p>
-                    <p class="teamMembers">p2</p>
-                    <p class="teamMembers">p3</p>
-                    <p class="teamMembers">p4</p>
-                    <p class="teamMembers">p5</p>
-                    </div>
-                </div>
+                        <div class="imageContainer">
+                            <div>
+                                <p>2</p>
+                                <img id="rank2" class="topTeamLogoImg" src="" alt="rank2"> 
+                                <p id="teamRank2" class="teamName"></p>  
+                            </div>
+                            
+                            <div class = boxInnerContent>
+                                <p class="teamMembers">p1</p>  
+                                <p class="teamMembers">p2</p>  
+                                <p class="teamMembers">p3</p>  
+                                <p class="teamMembers">p4</p>  
+                                <p class="teamMembers">p5</p>  
+                            </div>
+                        </div>
 
-                <div class="topTeamLogoBox">
-                    <img id="rank5" class="topTeamLogoImg" src="" alt="rank5">
-                    <div class = boxInnerContent>
-                    <p id="teamRank5"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                    </div>
-                </div>
+                        <div class="imageContainer">
+                            <div>
+                                <p>3</p>
+                                <img id="rank3" class="topTeamLogoImg" src="" alt="rank3"> 
+                                <p id="teamRank3" class="teamName"></p>  
+                            </div>
+                            <div class = boxInnerContent>
+                                <p class="teamMembers">p1</p>  
+                                <p class="teamMembers">p2</p>  
+                                <p class="teamMembers">p3</p>  
+                                <p class="teamMembers">p4</p>  
+                                <p class="teamMembers">p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>4</p>
+                                <img id="rank4" class="topTeamLogoImg" src="" alt="rank4">
+                                <p id="teamRank4" class="teamName"></p>  
+                            </div>
+                            <div class = boxInnerContent>
+                                <p class="teamMembers">p1</p>  
+                                <p class="teamMembers">p2</p>  
+                                <p class="teamMembers">p3</p>  
+                                <p class="teamMembers">p4</p>  
+                                <p class="teamMembers">p5</p>  
+                            </div>
+                        </div>
 
-                <div class="topTeamLogoBox">
-                    <img id="rank6" class="topTeamLogoImg" src="" alt="rank6">
-                    <div class = boxInnerContent>
-                    <p id="teamRank6"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                    </div>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank7" class="topTeamLogoImg" src="" alt="rank7">
-                    <div class = boxInnerContent></div>
-                    <p id="teamRank7"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                    </div>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank8" class="topTeamLogoImg" src="" alt="rank8">
-                    <div class = boxInnerContent>
-                    <p id="teamRank8"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                    </div>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank9" class="topTeamLogoImg" src="" alt="rank9">
-                    <div class = boxInnerContent>
-                    <p id="teamRank9"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                    </div>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank10" class="topTeamLogoImg" src="" alt="rank10">
-                    <p id="teamRank10"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank11" class="topTeamLogoImg" src="" alt="rank11">
-                    <p id="teamRank11"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank12" class="topTeamLogoImg" src="" alt="rank12">
-                    <p id="teamRank12"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank13" class="topTeamLogoImg" src="" alt="rank13">
-                    <p id="teamRank13"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank14" class="topTeamLogoImg" src="" alt="rank14">
-                    <p id="teamRank14"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank15" class="topTeamLogoImg" src="" alt="rank15">
-                    <p id="teamRank15"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank16" class="topTeamLogoImg" src="" alt="rank16">
-                    <p id="teamRank16"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank17" class="topTeamLogoImg" src="" alt="rank17">
-                    <p id="teamRank17"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank18" class="topTeamLogoImg" src="" alt="rank18">
-                    <p id="teamRank18"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank19" class="topTeamLogoImg" src="" alt="rank19">
-                    <p id="teamRank19"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
-                
-                <div class="topTeamLogoBox">
-                    <img id="rank20" class="topTeamLogoImg" src="" alt="rank20">
-                    <p id="teamRank20"></p>
-                    <p>p1</p>
-                    <p>p2</p>
-                    <p>p3</p>
-                    <p>p4</p>
-                    <p>p5</p>
-                </div>
+                        <div class="imageContainer">
+                            <div>
+                                <p>5</p>
+                                <img id="rank5" class="topTeamLogoImg" src="" alt="rank5"> 
+                                <p id="teamRank5" class="teamName"></p>  
+                            </div>
+                            <div class = boxInnerContent>
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
 
-            </div>
+                        <div class="imageContainer">
+                            <div>
+                                <p>6</p>
+                                <img id="rank6" class="topTeamLogoImg" src="" alt="rank6"> 
+                                <p id="teamRank6" class="teamName"></p> 
+                            </div>
+                            <div class = boxInnerContent>
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>7</p>
+                                <img id="rank7" class="topTeamLogoImg" src="" alt="rank7"> 
+                                <p id="teamRank7" class="teamName"></p> 
+                            </div>
+                            <div class = boxInnerContent>
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>8</p>
+                                <img id="rank8" class="topTeamLogoImg" src="" alt="rank8">    
+                                <p id="teamRank8" class="teamName"></p>     
+                            </div>                            
+                            <div class = boxInnerContent>
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>9</p>
+                                <img id="rank9" class="topTeamLogoImg" src="" alt="rank9"> 
+                                <p id="teamRank9" class="teamName"></p>  
+                            </div>                            
+                            <div class = boxInnerContent>                                
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>10</p>
+                                <img id="rank10" class="topTeamLogoImg" src="" alt="rank10"> 
+                                <p id="teamRank10" class="teamName"></p>
+                            </div>                            
+                            <div class = boxInnerContent>                                  
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div id="bottom10Container">
+
+                        <div class="imageContainer">
+                            <div>
+                                <p>11</p>
+                                <img id="rank11" class="topTeamLogoImg" src="" alt="rank11"> 
+                                <p id="teamRank11" class="teamName"></p> 
+                            </div>                            
+                            <div class = boxInnerContent>                                 
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>12</p>
+                                <img id="rank12" class="topTeamLogoImg" src="" alt="rank12"> 
+                                <p id="teamRank12" class="teamName"></p>  
+                            </div>                            
+                            <div class = boxInnerContent>                                
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                                </div>
+                            </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>13</p>
+                                <img id="rank13" class="topTeamLogoImg" src="" alt="rank13"> 
+                                <p id="teamRank13" class="teamName"></p> 
+                            </div>                            
+                            <div class = boxInnerContent>                                 
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>14</p>
+                                <img id="rank14" class="topTeamLogoImg" src="" alt="rank14"> 
+                                <p id="teamRank14" class="teamName"></p> 
+                            </div>                            
+                            <div class = boxInnerContent>                                 
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>15</p>
+                                <img id="rank15" class="topTeamLogoImg" src="" alt="rank15"> 
+                                <p id="teamRank15" class="teamName"></p>  
+                            </div>                            
+                            <div class = boxInnerContent>                                
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>16</p>
+                                <img id="rank16" class="topTeamLogoImg" src="" alt="rank16"> 
+                                <p id="teamRank16" class="teamName"></p>
+                            </div>                            
+                            <div class = boxInnerContent>                                  
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>17</p>
+                                <img id="rank17" class="topTeamLogoImg" src="" alt="rank17"> 
+                                <p id="teamRank17" class="teamName"></p>  
+                            </div>                            
+                            <div class = boxInnerContent>                                
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>18</p>
+                                <img id="rank18" class="topTeamLogoImg" src="" alt="rank18"> 
+                                <p id="teamRank18" class="teamName"></p>  
+                            </div>                            
+                            <div class = boxInnerContent>                                
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>19</p>
+                                <img id="rank19" class="topTeamLogoImg" src="" alt="rank19"> 
+                                <p id="teamRank19" class="teamName"></p> 
+                            </div>                            
+                            <div class = boxInnerContent>                                 
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>
+                
+                        <div class="imageContainer">
+                            <div>
+                                <p>20</p>
+                                <img id="rank20" class="topTeamLogoImg" src="" alt="rank20"> 
+                                <p id="teamRank20" class="teamName"></p> 
+                            </div>                                                        
+                            <div class = boxInnerContent>                                 
+                                <p>p1</p>  
+                                <p>p2</p>  
+                                <p>p3</p>  
+                                <p>p4</p>  
+                                <p>p5</p>  
+                            </div>
+                        </div>            
+                    </div>
+                </div>
 
         </div>
 
-        <!-- Content About Player -->
-        <div id="bottomContent">
+        <!-- Content About Player  -->
+        <div id="bottomOfWebPage">
 
             <div id="leftContent" class="bottomContent">
                 <img id="teamLogo" class="leftContentItems" src="" alt="teamLogo" />
