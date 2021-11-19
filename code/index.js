@@ -5,7 +5,7 @@ const makeMyApiEndpoint = (urlOfPage) => {
     return `https://liquipedia.net/counterstrike/api.php?action=parse&formatversion=1&page=${urlOfPage.substr(37, urlOfPage.length - 1)}&prop=text&format=json&origin=*`
 }
 
-// console.log(makeMyApiEndpoint('https://liquipedia.net/counterstrike/Natus_Vincere')); //Test my makeMyApiEndpoint function
+// console.log(makeMyApiEndpoint('https://liquipedia.net/counterstrike/HLTV/Team_Ranking')); //Test my makeMyApiEndpoint function
 
 //Make my BottomPage
 
@@ -28,7 +28,7 @@ const loadTopContent = () => {
         }
 
         const htmlFileOfPage = convertSvgToHtml(svgFileOfPage);
-
+        console.log(htmlFileOfPage);
         const whichTableDoIWant = () => {
             const previousMonth = () => {
                 const localDate = new Date();
@@ -54,6 +54,8 @@ const loadTopContent = () => {
             }
 
             return `${previousMonth()}_${currentYear()}`
+    
+
         };
         
         const createCollectionToFind = (selector, object) => {
@@ -67,6 +69,7 @@ const loadTopContent = () => {
         }
         
         const recentRankingTableHtml = searchForLatestTable(createCollectionToFind('.template-box', htmlFileOfPage));
+        // console.log(createCollectionToFind('.template-box', htmlFileOfPage))
         // console.log(recentRankingTableHtml)
 
         // console.log(recentRankingTableHtml.querySelector('table'));
@@ -81,7 +84,7 @@ const loadTopContent = () => {
         // console.log(b);
         // console.log(c);
         // console.log(d);
-        // console.log(e);
+        console.log(e);
         
         const teamRank1 = document.querySelector('#teamRank1');
         const teamRank2 = document.querySelector('#teamRank2');
@@ -183,7 +186,7 @@ const loadTopContent = () => {
 // const allImages = ".topTeamLogoImg"
 const rank1Image = document.querySelector('#rank1');
 // console.log(rank1Image);
-rank1Image.addEventListener("mouseover", function(e) {
+rank1Image.addEventListener("click", function(e) {
     e.target.style.display = "none";
 })
 rank1Image.addEventListener("mouseout", function(e) {
@@ -208,6 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('#playerName').innerText = playerName
         }
         ).catch(error => alert(error))
+        form.reset()
     })
 })
 

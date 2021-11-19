@@ -9,29 +9,61 @@ body {
 
 .topTeamLogoBox {
    display: inline-block;
-   width: 4.76%;
-   height: 4.76%;
+   width: 4%;
+   height: 4%;
    padding: 2.38%;
+   position: relative;
+   background: white;
+   margin-bottom: 10px;
+}
+
+.topTeamLogoimg {
+    position: absolute;
+    margin-bottom: 50%;
+    /* max-height: 100%;
+    max-width: 100%; */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    
 }
 
 .topTeamLogoBox p {
-    margin-top: 0;
-    margin-bottom: 0;
+    position: relative;
+    margin: 0;
+    margin-left: 0;
+    /* margin-bottom: 0; */
     font-size: 10px;
     text-align: left;
     vertical-align: top;
 }
 
+.boxInnerContent {
+    position: relative;
+    margin-top: -70px;
+    margin-left: -20px;
+}
 
+
+
+
+#bottomContent {
+    display: flex;
+    background: white;
+    margin-top: 30px;
+    position: relative;
+}
 
 .bottomContent {
-    display: inline-block;   
-    margin: auto;
     
+    display: inline-block;   
+    margin: auto;    
 }
 
 #leftContent {
     width: 20%;
+    align-items: left;
+    height: 100%;
 }
 
 .leftContentItems {
@@ -41,10 +73,24 @@ body {
 
 #middleContent {
     width: 50%;
+    /* position: absolute; */
+    margin-top: 0px;
+    align-items: middle;
+    height: 100%;
+    
 }
+
+/* #middleContent p {
+    position: absolute;
+    margin-top: 0px;
+} */
 
 #rightContent {
     width: 20%;
+}
+
+#rightContent {
+    align-items: right;
 }
 
 .rightContentItems {
